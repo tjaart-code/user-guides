@@ -1,0 +1,68 @@
+site_name: My User Guides
+site_url: http://127.0.0.1/user-guides/site/
+
+theme:
+  name: material
+  features:
+    - header.autohide
+    - navigation.path
+    - navigation.top
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - toc.follow
+    - content.code.copy
+  palette:
+    # Light Mode Settings
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: green
+      accent: green
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Dark Mode Settings
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: green
+      accent: green
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Ubuntu Sans
+    code: Ubuntu Sans Mono
+
+# This ensures the compiled HTML lands in a folder accessible by your browser
+site_dir: site
+
+# Navigation Structure
+nav:
+  - Welcome: index.md
+  - Bash Commands: bash-commands.md
+  - Scryfall API: scryfall-api.md
+  - Tutorials:
+    - Gantry Particles: gantry-particles.md
+    - Joomla Admin: edit-joomla-admin.md
+    - Installing LAMP Stack: lamp-stack.md
+    - Apache VirtualHost: apache-virtualhost.md
+    - Apache SSL vHost: apache-ssl-vhost-guide.md 
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+      auto_title: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+
+plugins:
+  - tags
+  - search
