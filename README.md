@@ -4,7 +4,7 @@ A personal documentation site built with MkDocs and the Material Theme, hosted o
 
 ## Local Development
 
-The site is served locally from `/var/www/html/mkdocs/`.
+The site is served locally from `/var/www/html/user-guides/`.
 
 ## MkDocs Commands
 
